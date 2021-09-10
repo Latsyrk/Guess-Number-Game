@@ -18,12 +18,11 @@ int main(){
 	
 	//after playing 1 time using guess function(line 30), user can choose whether they want to play again or to stop using choose function(line 90)
 	for(int i=0; i<10000;i++){
-		printf("\nDo you want to play again?(enter number)\n1 Yes\n2 No\n"); //give user selection whether user want to play again or stop playing
+		printf("\nDo you want to play again?(enter number)\n1 Yes\n2 No\n"); /
 		scanf("%d", &pilihan);
 		choose(pilihan); // use choose function(line 90) 
 	}
 
-			
 	return 0;
 	
 }
