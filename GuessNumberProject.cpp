@@ -9,6 +9,7 @@ void guess ();
 void choose(int A);
 void stop(int A); void clearScreen();
 
+
 int main(){
 
 	clearScreen();
