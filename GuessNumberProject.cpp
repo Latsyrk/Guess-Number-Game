@@ -59,7 +59,7 @@ void guess (){
 				for(int i=0; i<10000;i++){
 					printf("\nDo you want to play again?(enter number)\n1 Yes\n2 No\n"); // Give the user choice whether they want to play again or not
 					scanf("%d", &pilihan);
-					choose(pilihan); // use choose function(line 94) 
+					choose(pilihan); // use choose function(line 99) 
 				}
 
 			}else if(i%5 == 0){ //after 5 times guessing, user will have to choose whether user want to continue or not
@@ -84,7 +84,7 @@ void guess (){
 			} else if(targetNum < guessNum){ //if the input is bigger than the target mumber
 				puts("\nYour guess is higher than the target number.");
 			} 
-		} else if (guessNumchar[0] >= 'A') {//using ascii index, if input is an alphabet, program will print line 83
+		} else if (guessNumchar[0] >= 'A') {//using ascii index, if input is an alphabet, program will print line 88
 			puts("\nYou need to enter a number."); 
 		} else if (guessNum==targetNum){
 			break; //if the guess number is alrady correct (same with target number) the loop will be stopped using break
@@ -98,14 +98,14 @@ void guess (){
 
 void choose(int choice){
 	
-	if( choice==1 ){ //if on line 56 user choose "Yes", guess function(line 21 will occurs again)
+	if( choice==1 ){ //if on line 60 user choose "Yes", guess function(line 24 will occurs again)
 		clearScreen();
 		printf("Please enter a range of number (lower-higher): ");
 		guess();
 	} else if (choice==2){
 		clearScreen();
 		printf("\n\tThank You for Participating in this game!\n\t          See You next time!\n");
-		exit(1); //if on line 56 user choose"No", the program will stop.
+		exit(1); //if on line 60 user choose"No", the program will stop.
 	} else {
 		printf("Please enter number between 1 and 2\n"); //this occurs when user input number that is not 1 or 2
 	} 
